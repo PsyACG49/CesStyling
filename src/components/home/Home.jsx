@@ -11,7 +11,8 @@ const Home = () => {
       <Nav/>
       <section className='hero__container container'>
         <img src={ME} alt="imagen de Cesar" className='hero__img'/>
-        <h1 className='hero__title'>Estilismo profesional y de calidad</h1>
+        <h1 className='hero__title'>Cesar Fuetes</h1>
+        <p >Estilismo profesional y de calidad</p>
         <a href="#" className='cta'>Contactame</a>
       </section>
     </section>

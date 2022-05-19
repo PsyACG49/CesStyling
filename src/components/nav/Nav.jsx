@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import {HiOutlineMenuAlt3} from "react-icons/hi"
-import {MdOutlineCloseFullscreen} from "react-icons/md"
+import {IoIosCloseCircleOutline} from "react-icons/io"
 
 import './nav.css'
 
@@ -28,7 +28,7 @@ const Nav = () => {
           <a href="#" className="nav__links">Contacto</a>
         </li>
 
-        <MdOutlineCloseFullscreen className="nav__close" onClick={() => setOpenMenu(false)}/> 
+        <IoIosCloseCircleOutline className="nav__close" onClick={() => setOpenMenu(false)}/> 
       </ul>
 
       <div className="nav__menu">
