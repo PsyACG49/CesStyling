@@ -7,7 +7,7 @@ import './home.css'
 
 const Home = () => {
   return (
-    <section className='hero'>
+    <section id='home' className='hero'>
       <Nav/>
       <section className='hero__container container'>
         <img src={ME} alt="imagen de Cesar" className='hero__img'/>

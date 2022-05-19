@@ -13,10 +13,10 @@ const Nav = () => {
       </div>
       <ul className={`nav__link nav__link--menu ${openMenu === true ? "nav__link--show" : ""}`}>
         <li className="nav__item">
-          <a href="#" className="nav__links">Inicio</a>
+          <a href="#home" className="nav__links">Inicio</a>
         </li>
         <li className="nav__item">
-          <a href="#" className="nav__links">Acerca de</a>
+          <a href="#about" className="nav__links">Acerca de</a>
         </li>
         <li className="nav__item">
           <a href="#" className="nav__links">Servicios</a>

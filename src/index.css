@@ -35,3 +35,13 @@ body{
   overflow: hidden;
   padding: var(--padding-container);
 }
+
+.cta{
+  display: inline-block;
+  background-color: #2091f9;
+  justify-self: center;
+  color: #fff;
+  text-decoration: none;
+  padding: 13px 22px;
+  border-radius: 32px;
+}
