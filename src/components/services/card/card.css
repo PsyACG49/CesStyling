@@ -1,0 +1,42 @@
+.card {
+    display: grid;
+    gap: 1em;
+    justify-items: center;
+    width: 200px;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 2rem;
+    height: fit-content;
+    background-color: var(--color-light);
+    -webkit-box-shadow: 6px 9px 5px -1px rgba(0, 0, 0, 0.63);
+    -moz-box-shadow: 6px 9px 5px -1px rgba(0, 0, 0, 0.63);
+    box-shadow: 6px 9px 5px -1px rgba(0, 0, 0, 0.63);
+}
+
+.card__header {
+    width: 100%;
+    height: auto;
+    background-color: var(--color-btm);
+    padding: 0.7rem;
+    color: var(--font-white);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+
+
+.card__title {
+    font-size: 1rem;
+}
+
+
+.card__list li {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+.card__list p {
+    font-size: 0.9rem;
+}

@@ -19,13 +19,13 @@ const Nav = () => {
           <a href="#about" className="nav__links">Acerca de</a>
         </li>
         <li className="nav__item">
-          <a href="#" className="nav__links">Servicios</a>
+          <a href="#services" className="nav__links">Servicios</a>
         </li>
         <li className="nav__item">
-          <a href="#" className="nav__links">Galeria</a>
+          <a href="#galery" className="nav__links">Galeria</a>
         </li>
         <li className="nav__item">
-          <a href="#" className="nav__links">Contacto</a>
+          <a href="#contact" className="nav__links">Contacto</a>
         </li>
 
         <IoIosCloseCircleOutline className="nav__close" onClick={() => setOpenMenu(false)}/> 

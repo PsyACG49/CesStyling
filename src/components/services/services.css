@@ -1,0 +1,35 @@
+.services{
+    text-align: center;
+}
+
+.services__main{
+    padding-top: 40px;
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+}
+
+.services__title {
+    color: var(--color-title);
+    font-size: 2rem;
+    margin-bottom: 80px;
+}
+
+.card__icon{
+    font-size: 25px;
+}
+
+/* ==================== Meidia query (medium devices) ============================ */
+
+@media screen and (max-width: 1024px) {
+    
+}
+
+/* ==================== Meidia query (small devices) ============================ */
+
+@media screen and (max-width: 600px) {
+
+
+}
