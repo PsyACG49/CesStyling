@@ -1,0 +1,34 @@
+.galery__container{
+    text-align: center;
+}
+
+.galery__container h2{
+    color: var(--color-title);
+    font-size: 2rem;
+    margin-bottom: 80px;
+}
+
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 40%;
+    height: 60%;
+  }
+
+  .swiper-slide, .swiper-3d, .swiper-slide-visible, .swiper-slide-next, .swiper-slide-prev{
+    border-radius: 30px;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 20rem;
+    height: 30rem;
+    border-radius: 30px;
+  }

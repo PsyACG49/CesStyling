@@ -13,7 +13,7 @@ const Home = () => {
         <img src={ME} alt="imagen de Cesar" className='hero__img'/>
         <h1 className='hero__title'>Cesar Fuentes</h1>
         <p >Estilismo profesional y de calidad</p>
-        <a href="#" className='btm'>Contactame</a>
+        <a href="#contact" className='btm'>Contactame</a>
       </section>
     </section>
   )
