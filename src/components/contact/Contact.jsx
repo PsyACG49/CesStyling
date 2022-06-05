@@ -52,31 +52,26 @@ const Contact = () => {
 
   return (
     <section id="contact">
-      <h2>Contactame</h2>
+      <h2 className="contact__title">Contactame</h2>
 
       <div className="container contact__container">
         <div className="contact__options">
           <article className="contact__option">
-            <a href="mailto:andres.acg13@gmail.com">
+            <a href="mailto:cesarfc0311@gmail.com">
             <HiOutlineMailOpen className="contact__option-icon" />
-            <h4>Email</h4>
               </a>
           </article>
           <article className="contact__option">
             <a href="https://m.me/tEstO.TrancE" target="_blank">
             <RiMessengerLine className="contact__option-icon" />
-            <h4>Messenger</h4>
-            
             </a>
           </article>
           <article className="contact__option">
             <a
-              href="https://api.whatsapp.com/send?phone=+525579668286"
+              href="https://api.whatsapp.com/send?phone=+525521956641"
               target="_blank"
             >
-            <AiOutlineWhatsApp className="contact__option-icon" />
-            <h4>WhatsApp</h4>
-             
+            <AiOutlineWhatsApp className="contact__option-icon" /> 
             </a>
           </article>
         </div>
