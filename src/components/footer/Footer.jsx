@@ -1,4 +1,5 @@
 import React from "react";
+import {AiFillFacebook, AiFillTwitterSquare, AiFillInstagram} from 'react-icons/ai';
 import IMG from "../../assets/ilustracionBarber.svg";
 import "./footer.css";
 
@@ -6,9 +7,26 @@ const Footer = () => {
   return (
     <footer>
       <div className="footer__main">
+        <div>
         <a href="#" className="footer__logo">
           Cesar´s Style
         </a>
+        <div className="footer__socials">
+          <a href="#">
+          <AiFillFacebook className="footer__socials_icon"/>
+
+          </a>
+          <a href="">
+          <AiFillTwitterSquare className="footer__socials_icon"/>
+
+          </a>
+          <a href="">
+          <AiFillInstagram className="footer__socials_icon"/>
+
+          </a>
+        </div>
+          
+        </div>
         <ul className="permalinks">
           <li>
             <a href="#">Inicio</a>

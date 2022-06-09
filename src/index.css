@@ -13,8 +13,11 @@
 
 :root{
   --padding-container : 50px 0;
-  --color-title : #001a49;  
-  --color-btm: #2091f9;
+  --color-primary: #926c00;
+  --color-secundary: #bfa270;
+  --color-title : #025661;  
+  --color-btm: #00c9b1;
+  --color-btm-hover: #00be98;
   --font-white: #fff;
   --color-light: rgb(255, 255,255,0.6);
 }
@@ -63,9 +66,15 @@ section{
   padding: 0.75rem 1.2rem;
   border-radius: 0.4rem;
   cursor: pointer;
-  border: 1px solid var(--color-primary);
   transition: var(--transition);
   background-color: var(--color-btm);
   justify-self: center;
   color: var(--font-white);
+  -webkit-box-shadow: 3px 8px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 8px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 3px 8px 5px 0px rgba(0,0,0,0.75);
+}
+
+.btm:hover{
+  background-color: var(--color-btm-hover);
 }

@@ -1,30 +1,26 @@
-import React from 'react'
+import React from "react";
 
-import './card.css'
+import "./card.css";
 
-const Card = ({children}) => {
+const Card = ({ children, info }) => {
+  const { servicios } = info;
+
   return (
-    <article className='card'>
-          <div className='card__header'>
-            {children}
-            <h3 className='card__title'>Cortes</h3>
-          </div>
-          <ul className='card__list'>
-            <li>
-              <p>service1</p>
-              <p>$22</p>
-            </li>
-            <li>
-              <p>service2</p>
-              <p>$22</p>
-            </li>
-            <li>
-              <p>service1</p>
-              <p>$22</p>
-            </li>
-          </ul>
-        </article>
-  )
-}
+    <article className="card">
+      <div className="card__header">
+        {children}
+        <h3 className="card__title">{info.nombreServicio}</h3>
+      </div>
+      <ul className="card__list">
+        {servicios.map((servicio) => (
+          <li>
+            <p>{servicio.tipo}</p>
+            <p>{`$${servicio.precio}`}</p>
+          </li>
+        ))}
+      </ul>
+    </article>
+  );
+};
 
-export default Card
+export default Card;

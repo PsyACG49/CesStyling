@@ -24,14 +24,22 @@
 }
 
 .nav__links{
-    color: #fff;
+    color: var(--font-white);
     text-decoration: none;
+}
+
+.nav__links:hover{
+    color: var(--color-light);
 }
 
 .nav__menu{
     margin-left: auto;
     cursor: pointer;
     display: none;
+}
+
+.nav__menu:hover{
+    color: var(--color-light);
 }
 
 .nav__img{
@@ -42,6 +50,11 @@
 .nav__close{
     display: var(--show, none);
     font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.nav__close:hover{
+    color: var(--color-light);
 }
 
 
