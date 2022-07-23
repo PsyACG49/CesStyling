@@ -1,114 +1,46 @@
-import React from 'react'
+import Card from "./card/Card";
+import { BiCut } from "react-icons/bi";
+import { FaPaintBrush } from "react-icons/fa";
+import { GiComb } from "react-icons/gi";
+import { GiLargeDress } from "react-icons/gi";
 
-import Card from './card/Card'
-import {BiCut} from 'react-icons/bi'
-import {FaPaintBrush} from 'react-icons/fa'
-import {GiComb} from 'react-icons/gi'
-import {GiLargeDress} from 'react-icons/gi'
+import "./services.css";
+import { useCard } from "../../hooks/useCard";
 
-
-
-import './services.css'
-
-const arrayInfo = [
+const arrayIcons = [
   {
-    nombreServicio: "Cortes",
-    iconServicio: <BiCut className='card__icon'/>,
-    servicios : [
-      {
-        tipo: "Dama",
-        precio: 20
-      },
-      {
-        tipo: "Caballero",
-        precio: 40
-      },
-      {
-        tipo: "Caballero con navaja",
-        precio: 100
-      }
-    ]
+    iconServicio: <BiCut className="card__icon" />,
   },
   {
-    nombreServicio: "Tintes",
-    iconServicio: <FaPaintBrush className='card__icon'/>,
-    servicios: [
-      {
-        tipo: "Decoloracion",
-        precio: 20
-      },
-      {
-        tipo: "Tinte",
-        precio: 40
-      },
-      {
-        tipo: "Rayos",
-        precio: 100
-      }
-    ]
+    iconServicio: <FaPaintBrush className="card__icon" />,
   },
   {
-    nombreServicio: "Peinados",
-    iconServicio: <GiComb className='card__icon'/>,
-    servicios: [
-      {
-        tipo: "Boda",
-        precio: 20
-      },
-      {
-        tipo: "XV años",
-        precio: 40
-      },
-      {
-        tipo: "Graduaciones",
-        precio: 100
-      }
-    ]
+    iconServicio: <GiComb className="card__icon" />,
   },
   {
-    nombreServicio: "Maquillaje",
-    iconServicio: <GiLargeDress className='card__icon'/>,
-    servicios: [
-      {
-        tipo: "Dama",
-        precio: 20
-      },
-      {
-        tipo: "Caballero",
-        precio: 40
-      },
-      {
-        tipo: "Caballero con navaja",
-        precio: 100
-      }
-    ]
-  }
-]
+    iconServicio: <GiLargeDress className="card__icon" />,
+  },
+];
 
 const Services = () => {
-  return (
-    <section id='services' className='container services'>
-      <h2 className='services__title'>Servicios</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, earum.</p>
-      <div className='services__main'>
-      
-      {
-        arrayInfo.map( el => (
-          <Card info={el}>
-            {el.iconServicio}
-          </Card>
-        ))
-      }
-      
-      {/* <Card info={arrayInfo[0]}>
-        <BiCut className='card__icon'/>
-      </Card>
-     */}
-       
+  const cards = useCard();
 
+  return (
+    <section id="services" className="container services">
+      <h2 className="services__title">Servicios</h2>
+      <p>
+        Por que la belleza nos hace sentir vivos. Atrevete a reinventarte y
+        consentirte con alguno de mis servicios.
+      </p>
+      <div className="services__main" data-aos="fade-up">
+        {cards.map((el, index) => (
+          <Card info={el} key={index}>
+            {arrayIcons[index].iconServicio}
+          </Card>
+        ))}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;

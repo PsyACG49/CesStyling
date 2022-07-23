@@ -1,5 +1,9 @@
 import React from "react";
-import {AiFillFacebook, AiFillTwitterSquare, AiFillInstagram} from 'react-icons/ai';
+import {
+  AiFillFacebook,
+  AiFillTwitterSquare,
+  AiFillInstagram,
+} from "react-icons/ai";
 import IMG from "../../assets/ilustracionBarber.svg";
 import "./footer.css";
 
@@ -8,24 +12,20 @@ const Footer = () => {
     <footer>
       <div className="footer__main">
         <div>
-        <a href="#" className="footer__logo">
-          Cesar´s Style
-        </a>
-        <div className="footer__socials">
-          <a href="#">
-          <AiFillFacebook className="footer__socials_icon"/>
-
+          <a href="#" className="footer__logo">
+            Cesar´s Style
           </a>
-          <a href="">
-          <AiFillTwitterSquare className="footer__socials_icon"/>
-
-          </a>
-          <a href="">
-          <AiFillInstagram className="footer__socials_icon"/>
-
-          </a>
-        </div>
-          
+          <div className="footer__socials">
+            <a href="https://www.facebook.com/cesar.g.fuentes">
+              <AiFillFacebook className="footer__socials_icon" />
+            </a>
+            <a href="#">
+              <AiFillTwitterSquare className="footer__socials_icon" />
+            </a>
+            <a href="#">
+              <AiFillInstagram className="footer__socials_icon" />
+            </a>
+          </div>
         </div>
         <ul className="permalinks">
           <li>
@@ -35,10 +35,10 @@ const Footer = () => {
             <a href="#about">Acerca de</a>
           </li>
           <li>
-            <a href="#experience">Servicios</a>
+            <a href="#services">Servicios</a>
           </li>
           <li>
-            <a href="#services">Galeria</a>
+            <a href="#galery">Galeria</a>
           </li>
           <li>
             <a href="#contact">Contacto</a>
