@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 
 * {
   margin: 0;
@@ -11,27 +10,27 @@
   text-decoration: none;
 }
 
-:root{
-  --padding-container : 50px 0;
-  --color-primary: #926c00;
-  --color-secundary: #bfa270;
-  --color-title : #025661;  
+:root {
+  --padding-container: 50px 0;
+  --color-primary: #292826;
+  --color-secundary: #827e76;
+  --color-title: #025661;
   --color-btm: #00c9b1;
   --color-btm-hover: #00be98;
   --font-white: #fff;
-  --color-light: rgb(255, 255,255,0.6);
+  --color-light: rgb(255, 255, 255, 0.6);
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
 }
 
-body{
-  font-family: 'Poppins', sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -42,24 +41,23 @@ body{
   padding: var(--padding-container);
 }
 
-
 h1,
-h2, 
+h2,
 h3,
 h4,
-h5{
-    font-weight: 700;
+h5 {
+  font-weight: 700;
 }
 
-h1{
-    font-size: 2.5rem;
+h1 {
+  font-size: 2.5rem;
 }
 
-section{
-    margin-top: 8rem;
+section {
+  margin-top: 8rem;
 }
 
-.btm{
+.btm {
   width: max-content;
   display: inline-block;
   color: var(--color-primary);
@@ -70,11 +68,11 @@ section{
   background-color: var(--color-btm);
   justify-self: center;
   color: var(--font-white);
-  -webkit-box-shadow: 3px 8px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 3px 8px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 3px 8px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 3px 8px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 8px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 8px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
-.btm:hover{
+.btm:hover {
   background-color: var(--color-btm-hover);
 }

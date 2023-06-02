@@ -5,6 +5,7 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import IMG from "../../assets/ilustracionBarber.svg";
+import LOGO from "../../assets/Cstyle.png";
 import "./footer.css";
 
 const Footer = () => {
@@ -13,7 +14,11 @@ const Footer = () => {
       <div className="footer__main">
         <div>
           <a href="#" className="footer__logo">
-            Cesar´s Style
+            <img
+              src={LOGO}
+              alt="logotipo CStyle"
+              className="footer__main-img"
+            />
           </a>
           <div className="footer__socials">
             <a href="https://www.facebook.com/cesar.g.fuentes">

@@ -1,79 +1,79 @@
-footer{
-    background: var(--color-primary);
-    padding: 3rem 0;
-    text-align: center;
-    font-size: 0.9rem;
-    margin-top: 7rem;
+footer {
+  background: var(--color-primary);
+  padding: 3rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 7rem;
 }
 
-
-footer a{
-     color: var(--font-white);
-
+footer a {
+  color: var(--font-white);
 }
 
-footer a:hover{
-    color: var(--color-light);
+footer a:hover {
+  color: var(--color-light);
 }
 
-.footer__main{
-    display: grid;
-    grid-template-columns: 30% 20% 30%;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
+.footer__main {
+  display: grid;
+  grid-template-columns: 30% 20% 30%;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
 }
 
-.footer__logo{
-    font-size: 2rem;
-    font-weight: 500;
-    margin-bottom: 2rem;
-    display: inline-block;
+.footer__logo {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  display: inline-block;
 }
 
-.footer__socials_icon{
-    font-size: 2.5rem;
-    color: var(--font-white);
-    margin: 0 1rem;
+.footer__socials_icon {
+  font-size: 2.5rem;
+  color: var(--font-white);
+  margin: 0 1rem;
 }
 
-.footer__socials_icon:hover{
-    color: var(--color-light);
+.footer__socials_icon:hover {
+  color: var(--color-light);
 }
 
-.permalinks{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2rem;
-    margin: 0 auto 3rem;
+.permalinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 auto 3rem;
 }
 
-.footer__img img{
-    width: 80%;
-    height: 70%;
+.footer__img img {
+  width: 80%;
+  height: 70%;
 }
 
-
-.footer__copyright{
-    margin: 2rem;
-    margin-bottom: 1rem;
-    color: var(--font-white);
+.footer__main-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
+.footer__copyright {
+  margin: 2rem;
+  margin-bottom: 1rem;
+  color: var(--font-white);
+}
 
 /* ==================== Meidia query (medium devices) ============================ */
 
 @media screen and (max-width: 1024px) {
-    
 }
-    
 
 /* ==================== Meidia query (small devices) ============================ */
 
 @media screen and (max-width: 600px) {
-    
-.footer__main{
-    grid-template-columns: 1fr; 
-}
+  .footer__main {
+    grid-template-columns: 1fr;
+  }
 }
