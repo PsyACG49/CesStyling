@@ -1,5 +1,7 @@
 const getCards = async () => {
-  const res = await fetch("https://api-ces-style.herokuapp.com/api/v1/cards/");
+  const res = await fetch(
+    "https://backgallery-production.up.railway.app/api/v1/cards"
+  );
   const cards = await res.json();
   return cards;
 };
